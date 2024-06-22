@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="test_pkg" type="pub1.py" name="pub1" output="screen" />
+
+  <node pkg="test_pkg" type="subs1.py" name="subs1" output="screen">
+    <param name="topic" value="/csv_data_topic2" />
+  </node>
+
+</launch>
